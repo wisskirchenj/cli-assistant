@@ -22,4 +22,5 @@ Have fun!
 
 [//]: # (Project was completed on 19.11.23)
 
-26.11.23 Project started 
+26.11.23 Project started and stage 1 completed - process CL-arguments into map object.
+Test uses jest.spyOn mocking process.exit and console.log
