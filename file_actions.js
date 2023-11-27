@@ -61,7 +61,7 @@ const diskUsage = async (files) => {
     const promises = files.split("-").map(fileSizekB);
     const sizes = await Promise.all(promises);
     const totalSize = sizes.reduce((total, size) => total + size, 0);
-    console.log(`The size of the specified files is ${totalSize.toFixed(2).replace(/\.?0+$/, '')} kilobytes`);
+    console.log(`The size of the specified files is ${totalSize.toFixed(1).replace(/\.?0+$/, '')} kilobytes`);
 }
 
 const listWorkingDir = async () => {

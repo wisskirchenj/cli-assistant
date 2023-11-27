@@ -78,13 +78,13 @@ test('fileSizekB errors for non existing file', async () => {
 test('diskUsage works for file', async () => {
   const path = '.gitignore';
   await diskUsage(path);
-  expect(mockLog).toHaveBeenCalledWith(`The size of the specified files is 0.02 kilobytes`);
+  expect(mockLog).toHaveBeenCalledWith(`The size of the specified files is 0 kilobytes`);
 });
 
 test('diskUsage works for multiple files', async () => {
   const path = '.gitignore-.github';
   await diskUsage(path);
-  expect(mockLog).toHaveBeenCalledWith(`The size of the specified files is 0.12 kilobytes`);
+  expect(mockLog).toHaveBeenCalledWith(`The size of the specified files is 0.1 kilobytes`);
 });
 
 test('listWorkingDir works for current folder', async () => {
