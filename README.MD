@@ -25,6 +25,6 @@ Project was completed on 27.11.23
 26.11.23 Project started and stage 1 completed - process CL-arguments into map object.
 Test uses jest.spyOn mocking process.exit and console.log
 
-26.11.23 Stage 2 completed - file system commands on base of CL-parsing.
+27.11.23 Stage 2 completed - file system commands on base of CL-parsing.
 
-26.11.23 Final stage 3 completed - more file system commands as disk usage, directory listing etc.
+27.11.23 Final stage 3 completed - more file system commands as disk usage, directory listing etc.
