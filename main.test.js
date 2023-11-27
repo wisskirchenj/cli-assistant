@@ -24,7 +24,7 @@ test('processArgs works with -p --save=false --interactive', () => {
 test('processArgs invalid args with -save= logs error and exits', () => {
   const argv = ['--save='];
   const mockExit = jest.spyOn(process, 'exit').mockImplementation(() => {});
-  const mockLog = jest.spyOn(console, 'log');
+  const mockLog = jest.spyOn(console, 'log').mockImplementation(() => {});
   processArgs(argv);
   expect(mockExit).toHaveBeenCalledWith(1);
   expect(mockLog).toHaveBeenCalledWith("It seems you forget to specify argument!");
