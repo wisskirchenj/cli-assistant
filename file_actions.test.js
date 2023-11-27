@@ -82,9 +82,9 @@ test('diskUsage works for file', async () => {
 });
 
 test('diskUsage works for multiple files', async () => {
-  const path = '.gitignore-.github';
+  const path = '.gitignore-README.MD';
   await diskUsage(path);
-  expect(mockLog).toHaveBeenCalledWith(`The size of the specified files is 0.1 kilobytes`);
+  expect(mockLog).toHaveBeenCalledWith(`The size of the specified files is 1.1 kilobytes`);
 });
 
 test('listWorkingDir works for current folder', async () => {
